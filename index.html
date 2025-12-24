@@ -36,11 +36,13 @@
         display:flex;
         justify-content: space-between;
         align-items: center;
+        
         box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
         padding:20px 40px;
+         z-index: 1000;
       }
       .logo{
-        font-size: 0px;
+        font-size: 20px;
         font-weight: 700;
       }
       .navlinks{
@@ -121,7 +123,7 @@
 }
 
 .hero-right img {
-  width: 590px;        
+  width: 550px;        
   height: 550px;        
   object-fit: cover;   
   border-radius: 50%;  
@@ -423,10 +425,14 @@
 /* Responsive Navbar & Layout */
 @media (max-width: 991px) {
   .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 60px 5%;
+    
+   flex-direction: column;
+    justify-content: flex-start;
+    min-height: auto;
+    padding: 50px 5% 20px;
   }
+  
+
 
   .hero-left,
   .hero-right {
@@ -434,18 +440,59 @@
     max-width: 100%;
   }
 
-  .hero-left {
-    margin-bottom: 40px;
-  }
+ 
 
   .bg-skew {
     display: none;
   }
+   
 
-  .navbar {
-    padding: 15px 20px;
+  .logo {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 8px;
   }
 
+  .navlinks {
+    width: 100%;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .navlinks li a {
+    font-size: 14px;
+  }
+   .hero-left {
+    margin-bottom: 20px;
+   
+   
+  }
+  .hero-left img{
+    height:100px;
+  }
+  
+ 
+
+
+
+  .navbar {
+    display: flex;
+     flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    height: 70px;
+    background-color: rgb(243, 243, 239);
+  }
+
+  .logo {
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  
   .nav-links {
     position: absolute;
     top: 60px;
@@ -454,8 +501,9 @@
     flex-direction: column;
     width: 200px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+     gap: 12px;
     padding: 15px 0;
-    display: none;
+    display: flex;
   }
 
   .nav-links li {
@@ -515,7 +563,7 @@
     </style>
 </head>
 <body>
-<!-- nav bar-->
+  <div>
     <nav class="navbar">
             <div class="logo">SILVIYA GRACE.S</div>
             <input type="checkbox" id="checkbox" hidden>
@@ -532,7 +580,7 @@
       <div id="particles-js">
         <section class="hero">
             <div class="hero-left">
-                <p class="tagline">WE DESIGN & BUILD BRANDS</p>
+                <p class="tagline">I DESIGN & BUILD INTERACTIVE WEBSITES</p>
                 <h1>Hi, I am <span>Silviya Grace.S</span> <br>I build responsive & modern websites.</h1>
                 <div class="buttons">
                     <a href="#" class="btn primary">Hire me</a>
@@ -541,7 +589,7 @@
             </div>
             <div class="hero-right">
                 <div class="bg-skew"></div>
-                <img src="assets/images/sil.jpg" alt="Grace" />
+                <img src="sil.jpg" alt="Grace" />
             </div>
         </section>
     </div>
@@ -550,7 +598,7 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-img">
-                    <img src="assets/images/full3.jpg" alt="Profile Picture">
+                    <img src="full3.jpg" alt="Profile Picture">
                 </div>
                 <div class="about-content">
                     <h5 class="section-subtitle">MY INTRODUCTION</h5>
@@ -574,7 +622,7 @@
                         <p><strong>Zip code:</strong> 623501</p>
                         <p><strong>Email:</strong> silviyagrace@gmail.com</p>
                         <p><strong>Phone:</strong> +91 9344006711</p>
-                    </div>
+                    </div>0
                     <div class="interests">
                         <span><i class="fas fa-music"></i> Music</span>
                         <span><i class="fas fa-plane"></i> Travel</span>
